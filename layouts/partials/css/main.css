@@ -81,7 +81,6 @@ body {
   -ms-justify-content: flex-start;
   justify-content: flex-start;
   width: 100%;
-  min-height: 100%;
   font-weight: 400;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
   color: #111111;
@@ -157,12 +156,14 @@ div.header .content {
   align-items: center;
 }
 div.header .container .logo {
-  max-width: 100px;
-  margin-left: -2em;
+  max-width: 150px;
+  margin-left: 40px;
+  border-radius: 50%;
+  
 }
 div.header .name {
   padding-top: 20px;
-  font-size: 28px;
+  font-size: 38px;
   font-family: 'Nexa Bold', 'Helvetica Neue', 'Arial', sans-serif;
   letter-spacing: -0.005rem;
   {{ if isset .Site.Params "titlestyle" }}
@@ -257,7 +258,7 @@ div.footer .container .copyright {
 }
 div.footer .container .icons {
   flex-grow: 0.5;
-  text-align: end;
+  text-align: start;
 }
 div.main .container {
   -webkit-align-items: center;
@@ -579,7 +580,6 @@ div.main .content .markdown abbr {
   font-size: 0.85rem;
   font-weight: bold;
   color: #666666;
-  text-transform: uppercase;
 }
 div.main .content .markdown abbr[title] {
   cursor: help;
